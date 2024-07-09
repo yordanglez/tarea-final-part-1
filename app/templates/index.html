@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Alcala</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Noticias Alcala</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="form-inline my-2 my-lg-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="main-article mb-4">
+                    <img src="{{ url_for('static', filename='img/1.jpg') }}" class="img-fluid" alt="Imagen principal">
+                    <h2><a href="noticia.html">Cortes de tráfico por obras en las calles Colegios y Calle Santo Tomás de Aquino</a></h2>
+                    <p>Cortes de tráfico por obras en las calles Colegios y Calle Santo Tomás de Aquino concurso del cartel que será imagen de la Real Feria de San Mateo 2024 de Alcalá la Real</p>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="{{ url_for('static', filename='img/3.jpg') }}" class="img-fluid float-left mr-3" alt="Imagen miniatura 1">
+                        <h5 class="mb-1">Nuevas plazas de Policía Local en Alcalá de Henares</h5>
+                        <p class="mb-1">Cerca de 1.400 personas optarán a las 17 nuevas plazas de Policía Local en Alcalá de Henares</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="{{ url_for('static', filename='img/5.jpg') }}" class="img-fluid float-left mr-3" alt="Imagen miniatura 2">
+                        <h5 class="mb-1">Festival Clásicos en Alcalá </h5>
+                        <p class="mb-1">Entradas y programación para el Festival Clásicos en Alcalá 2024</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
